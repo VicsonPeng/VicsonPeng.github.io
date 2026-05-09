@@ -3,65 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peng Chen | ML Engineer Portfolio</title>
+    <title>Peng Chen | ML Engineer Intern</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="dark-theme">
-    <nav class="navbar">
-        <div class="nav-logo">Vicson.<span>AI</span></div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="academic.html">Academic</a></li>
-        </ul>
-    </nav>
+<body>
 
-    <main class="container hero-section">
-        <div class="hero-content">
-            <div class="profile-container">
-                <img src="profile.jpg" alt="Peng Chen" class="profile-img-large">
-                <div class="status-badge"><span class="pulse"></span> Available for Internship</div>
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+        <div class="profile-section">
+            <img src="profile.jpg" alt="Peng Chen" class="profile-pic" onerror="this.src='https://via.placeholder.com/150/2c3e50/ffffff?text=PC'">
+            <h1 class="name">彭程</h1>
+            <h2 class="english-name">Peng Chen</h2>
+            <p class="job-title">Machine Learning Engineer Intern</p>
+        </div>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <span class="icon">📍</span>
+                <span>Taipei / Hsinchu, Taiwan</span>
             </div>
-            <div class="bio-text">
-                <h1 class="glitch-text" data-text="Peng Chen">彭程 Peng Chen</h1>
-                <p class="tagline">Machine Learning Engineer Intern @ NYCU</p>
-                <div class="contact-chips">
-                    <span>📍 Taipei / Hsinchu</span>
-                    <span>✉️ vicsonpeng@gmail.com</span>
-                </div>
-                <div class="summary-box">
-                    <p>Junior CS student at NYCU (GPA 4.18/4.30). Experienced in bridging the gap between research and production with scalable data pipelines (40k+ samples) and end-to-end ML workflows.</p>
-                </div>
-                <div class="cta-buttons">
-                    <a href="projects.html" class="btn btn-primary">View Projects</a>
-                    <a href="academic.html" class="btn btn-secondary">Academic Path</a>
-                </div>
+            <div class="contact-item">
+                <span class="icon">📞</span>
+                <span>0908-951-327</span>
+            </div>
+            <div class="contact-item">
+                <span class="icon">✉️</span>
+                <span>vicsonpeng@gmail.com</span>
             </div>
         </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#summary" class="nav-link active">Summary</a></li>
+                <li><a href="#competencies" class="nav-link">Competencies</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#academic" class="nav-link">Academic Path</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Right Main Content -->
+    <main class="main-content">
+        
+        <!-- Summary Section -->
+        <section id="summary" class="section">
+            <h2 class="section-title">Summary</h2>
+            <div class="card">
+                <p>Junior CS student at NYCU (GPA 4.18/4.30) with a strong foundation in Data Structures, Algorithms, and ML architectures. Experienced in bridging the gap between research and production by building scalable data pipelines (40k+ samples), internal API servers, and end-to-end ML workflows using Python and PyTorch.</p>
+                <p>Highly adept at utilizing LLM-powered tools (ChatGPT, Copilot) to boost development productivity. Passionate about applying cutting-edge ML technologies to real-world systems.</p>
+            </div>
+        </section>
+
+        <!-- Core Competencies Section -->
+        <section id="competencies" class="section">
+            <h2 class="section-title">Core Competencies & Value</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h4>GPA</h4>
+                    <span class="stat-value">4.18 / 4.30</span>
+                </div>
+                <div class="stat-card">
+                    <h4>TOEFL iBT</h4>
+                    <span class="stat-value">99</span>
+                </div>
+                <div class="stat-card">
+                    <h4>Certification</h4>
+                    <span class="stat-value">GPE Passed</span>
+                </div>
+                <div class="stat-card">
+                    <h4>CS Fundamentals</h4>
+                    <span class="stat-value">Algo/DS (A+)</span>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Key Qualifications</th>
+                            <th>Evidence from Experience</th>
+                            <th>Value Added to Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>End-to-End ML Workflows</strong></td>
+                            <td>GazeCtrl Data Pipeline, ML (A+)</td>
+                            <td>Solid grasp of core ML/DL concepts. Proven ability to operate robust ML job execution frameworks for training and inference.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>API & Infrastructure</strong></td>
+                            <td>Full-Stack DB Coursework, OS & Net</td>
+                            <td>Capable of building internal API servers and monitoring dashboards. Ready for cloud-native ecosystems (Docker, Kubernetes).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Algos & LLM Dev</strong></td>
+                            <td>Algorithms (A+), Data Structures (A+)</td>
+                            <td>Impact-driven mindset with strong problem-solving skills. Highly familiar with LLM tools to accelerate API development.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <h2 class="section-title">Project & Experience</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item card">
+                    <div class="timeline-header">
+                        <h3>GazeCtrl: End-to-End ML Workflow & Data Infrastructure</h3>
+                        <span class="role-badge">ML Engineer</span>
+                    </div>
+                    <p class="tech-stack">Python, PyTorch, LLM APIs</p>
+                    <ul class="bullet-list">
+                        <li><strong>Scalable Data Pipelines:</strong> Built and optimized data infrastructure to process ~40,000 samples, managing multi-dimensional features (Mask, Depth) for high-performance model training and inference.</li>
+                        <li><strong>Research to Production:</strong> Engineered robust job execution frameworks and integrated LLM APIs, turning theoretical research concepts (Depth-Aware Masking) into executable, user-facing features.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item card">
+                    <div class="timeline-header">
+                        <h3>Internal API Servers & Dynamic Dashboard System</h3>
+                        <span class="role-badge">Full-Stack Developer</span>
+                    </div>
+                    <p class="tech-stack">Course Project: Database & Web</p>
+                    <ul class="bullet-list">
+                        <li><strong>API & System Architecture:</strong> Developed internal API servers and backend logic to orchestrate complex database transactions and data retrieval.</li>
+                        <li><strong>Monitoring & Dashboards:</strong> Designed complex relational database schemas and built dynamic dashboards, establishing a foundation for monitoring tools and data visualization.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item card">
+                    <div class="timeline-header">
+                        <h3>CPLab ML Experimentation & Model Training</h3>
+                        <span class="role-badge">Research Trainee</span>
+                    </div>
+                    <p class="tech-stack">PyTorch, Model Evaluation</p>
+                    <ul class="bullet-list">
+                        <li>Collaborated closely with lab members to simplify ML experimentation workflows, assisting in training, inference, and post-processing tasks.</li>
+                        <li>Continuously evaluated state-of-the-art architectures through intensive paper reading, combining theoretical concepts with practical PyTorch implementations.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Path Section -->
+        <section id="academic" class="section">
+            <h2 class="section-title">Academic Learning Path</h2>
+            <div class="academic-grid">
+                <div class="course-box card">
+                    <h3>Core ML & Data</h3>
+                    <ul>
+                        <li>Machine Learning <span class="grade">A+</span></li>
+                        <li>Intro to Data Science <span class="grade">A+</span></li>
+                        <li>Intro to AI <span class="grade">A</span></li>
+                        <li>Probability <span class="grade">A+</span></li>
+                    </ul>
+                </div>
+                <div class="course-box card">
+                    <h3>Algo & Structures</h3>
+                    <ul>
+                        <li>Algorithms <span class="grade">A+</span></li>
+                        <li>Data Structures / OOP <span class="grade">A+</span></li>
+                        <li>Linear Algebra <span class="grade">A+</span></li>
+                        <li>Discrete Math <span class="grade">A+</span></li>
+                    </ul>
+                </div>
+                <div class="course-box card">
+                    <h3>Systems & Infrastructure</h3>
+                    <ul>
+                        <li>Operating Systems <span class="grade">A+</span></li>
+                        <li>Database Systems <span class="grade">A+</span></li>
+                        <li>Computer Networks <span class="grade">A</span></li>
+                        <li>Digital Circuit Design <span class="grade">A+</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Languages Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills & Languages</h2>
+            <div class="skills-grid">
+                <div class="skill-box card">
+                    <div class="icon-wrap">💻</div>
+                    <h3>Programming</h3>
+                    <p>Python, C/C++, SQL, Shell Scripting, JavaScript.</p>
+                </div>
+                <div class="skill-box card">
+                    <div class="icon-wrap">⚙️</div>
+                    <h3>ML & Infrastructure</h3>
+                    <p>PyTorch, Data Pipelines, API Server, Linux (Ubuntu), Git, Docker.</p>
+                </div>
+                <div class="skill-box card">
+                    <div class="icon-wrap">🚀</div>
+                    <h3>Productivity Tools</h3>
+                    <p>GitHub Copilot, ChatGPT (LLM-powered dev workflows).</p>
+                </div>
+                <div class="skill-box card">
+                    <div class="icon-wrap">🌐</div>
+                    <h3>Languages</h3>
+                    <p>English (TOEFL iBT 99), Mandarin (Native).</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 Peng Chen. All rights reserved.</p>
+        </footer>
+
     </main>
-
-    <section class="container skills-highlights">
-        <h2 class="section-title">Core Tech Stack</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3>Python & PyTorch</h3>
-                <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
-            </div>
-            <div class="skill-card">
-                <h3>ML Pipelines</h3>
-                <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
-            </div>
-            <div class="skill-card">
-                <h3>API & Backend</h3>
-                <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
-            </div>
-            <div class="skill-card">
-                <h3>LLM Dev Tools</h3>
-                <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
-            </div>
-        </div>
-    </section>
 
     <script src="script.js"></script>
 </body>
