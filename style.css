@@ -1,0 +1,239 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --bg-color: #f8f9fa;
+    --container-bg: #ffffff;
+    --text-main: #333333;
+    --text-muted: #666666;
+    --border-color: #e2e8f0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--container-bg);
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+.header-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--border-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content h1 {
+    margin: 0 0 5px 0;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+
+.contact-info {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+hr {
+    border: none;
+    border-top: 2px solid var(--border-color);
+    margin: 30px 0;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.bg-light {
+    background-color: #f1f5f9;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+/* Grids */
+.grid-3-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.stat-box h4 {
+    margin: 0 0 5px 0;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.stat-box p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+/* Table */
+.qualifications-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+.qualifications-table th,
+.qualifications-table td {
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.qualifications-table th {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Experience */
+.experience-item {
+    margin-bottom: 25px;
+}
+
+.experience-item h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.role {
+    font-weight: 600;
+    color: var(--secondary-color);
+    font-style: italic;
+    margin: 0 0 10px 0;
+    font-size: 0.95rem;
+}
+
+.experience-item ul {
+    margin: 0;
+    padding-left: 20px;
+    color: var(--text-main);
+}
+
+.experience-item li {
+    margin-bottom: 8px;
+}
+
+/* Academic & Skills */
+.academic-category h4 {
+    margin: 0 0 10px 0;
+    color: var(--primary-color);
+}
+
+.academic-category ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.academic-category li {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.academic-category li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill-item h4 {
+    margin: 0 0 5px 0;
+    color: var(--primary-color);
+    border-left: 3px solid var(--accent-color);
+    padding-left: 10px;
+}
+
+.skill-item p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info {
+        justify-content: center;
+    }
+
+    .resume-container {
+        padding: 30px 20px;
+    }
+}
