@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
@@ -23,26 +25,31 @@
 
         <div class="contact-info">
             <div class="contact-item">
-                <span class="icon">📍</span>
+                <span class="icon"><i data-lucide="map-pin"></i></span>
                 <span>Taipei / Hsinchu, Taiwan</span>
             </div>
             <div class="contact-item">
-                <span class="icon">📞</span>
+                <span class="icon"><i data-lucide="phone"></i></span>
                 <span>0908-951-327</span>
             </div>
             <div class="contact-item">
-                <span class="icon">✉️</span>
+                <span class="icon"><i data-lucide="mail"></i></span>
                 <span>vicsonpeng@gmail.com</span>
             </div>
             <div class="contact-item">
-                <span class="icon">🔗</span>
+                <span class="icon"><i data-lucide="linkedin"></i></span>
                 <a href="https://www.linkedin.com/in/chen-peng-74376a335/?isSelfProfile=true"
                     target="_blank">LinkedIn</a>
             </div>
             <div class="contact-item">
-                <span class="icon">🔗</span>
+                <span class="icon"><i data-lucide="github"></i></span>
                 <a href="https://github.com/VicsonPeng" target="_blank">GitHub</a>
             </div>
+            
+            <a href="#" class="btn-primary" download>
+                <i data-lucide="download"></i>
+                Download Resume
+            </a>
         </div>
 
         <nav class="nav-menu">
@@ -60,9 +67,9 @@
     <main class="main-content">
 
         <!-- Summary Section -->
-        <section id="summary" class="section">
+        <section id="summary" class="section reveal">
             <h2 class="section-title">Summary</h2>
-            <div class="card">
+            <div class="card reveal">
                 <p>I'm a computer science student at NYCU and a member of the CPLAB under the supervision of
                     professor Yu-Lun Yu. I am passionate about computer vision, machine learning and deep learning.
                     I have a strong foundation in Data Structures, Algorithms and ML architectures. Experienced in
@@ -71,23 +78,23 @@
         </section>
 
         <!-- Core Competencies Section -->
-        <section id="competencies" class="section">
+        <section id="competencies" class="section reveal">
             <h2 class="section-title">Core Competencies & Value</h2>
 
             <div class="stats-grid">
-                <div class="stat-card">
+                <div class="stat-card reveal">
                     <h4>GPA</h4>
                     <span class="stat-value">4.18 / 4.30</span>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card reveal">
                     <h4>TOEFL iBT</h4>
                     <span class="stat-value">99</span>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card reveal">
                     <h4>Certification</h4>
                     <span class="stat-value">GPE Passed</span>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card reveal">
                     <h4>CS Fundamentals</h4>
                     <span class="stat-value">Algo/DS (A+)</span>
                 </div>
@@ -127,11 +134,11 @@
         </section>
 
         <!-- Experience Section -->
-        <section id="experience" class="section">
+        <section id="experience" class="section reveal">
             <h2 class="section-title">Project & Experience</h2>
 
             <div class="timeline">
-                <div class="timeline-item card">
+                <div class="timeline-item card reveal">
                     <div class="timeline-header">
                         <h3>GazeCtrl: End-to-End ML Workflow & Data Infrastructure</h3>
                         <span class="role-badge">ML Engineer</span>
@@ -145,9 +152,14 @@
                             integrated LLM APIs, turning theoretical research concepts (Depth-Aware Masking) into
                             executable, user-facing features.</li>
                     </ul>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://github.com/VicsonPeng" target="_blank" class="btn-outline">
+                            <i data-lucide="github"></i> View Repository
+                        </a>
+                    </div>
                 </div>
 
-                <div class="timeline-item card">
+                <div class="timeline-item card reveal">
                     <div class="timeline-header">
                         <h3>Internal API Servers & Dynamic Dashboard System</h3>
                         <span class="role-badge">Full-Stack Developer</span>
@@ -162,7 +174,7 @@
                     </ul>
                 </div>
 
-                <div class="timeline-item card">
+                <div class="timeline-item card reveal">
                     <div class="timeline-header">
                         <h3>CPLab ML Experimentation & Model Training</h3>
                         <span class="role-badge">Research Trainee</span>
@@ -179,10 +191,10 @@
         </section>
 
         <!-- Academic Path Section -->
-        <section id="academic" class="section">
+        <section id="academic" class="section reveal">
             <h2 class="section-title">Academic Learning Path</h2>
             <div class="academic-grid">
-                <div class="course-box card">
+                <div class="course-box card reveal">
                     <h3>Core ML & Data</h3>
                     <ul>
                         <li>Machine Learning <span class="grade">A+</span></li>
@@ -191,7 +203,7 @@
                         <li>Probability <span class="grade">A+</span></li>
                     </ul>
                 </div>
-                <div class="course-box card">
+                <div class="course-box card reveal">
                     <h3>Algo & Structures</h3>
                     <ul>
                         <li>Algorithms <span class="grade">A+</span></li>
@@ -200,7 +212,7 @@
                         <li>Discrete Math <span class="grade">A+</span></li>
                     </ul>
                 </div>
-                <div class="course-box card">
+                <div class="course-box card reveal">
                     <h3>Systems & Infrastructure</h3>
                     <ul>
                         <li>Operating Systems <span class="grade">A+</span></li>
@@ -213,21 +225,21 @@
         </section>
 
         <!-- Skills & Languages Section -->
-        <section id="skills" class="section">
+        <section id="skills" class="section reveal">
             <h2 class="section-title">Skills & Languages</h2>
             <div class="skills-grid">
-                <div class="skill-box card">
-                    <div class="icon-wrap"></div>
+                <div class="skill-box card reveal">
+                    <div class="icon-wrap"><i data-lucide="code"></i></div>
                     <h3>Programming</h3>
                     <p>Python, C/C++, SQL, Shell Scripting, JavaScript.</p>
                 </div>
-                <div class="skill-box card">
-                    <div class="icon-wrap"></div>
+                <div class="skill-box card reveal">
+                    <div class="icon-wrap"><i data-lucide="database"></i></div>
                     <h3>ML & Infrastructure</h3>
                     <p>PyTorch, Data Pipelines, API Server, Linux (Ubuntu), Git, Docker.</p>
                 </div>
-                <div class="skill-box card">
-                    <div class="icon-wrap"></div>
+                <div class="skill-box card reveal">
+                    <div class="icon-wrap"><i data-lucide="languages"></i></div>
                     <h3>Languages</h3>
                     <p>English (TOEFL iBT 99), Mandarin (Native).</p>
                 </div>
